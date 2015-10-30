@@ -1,0 +1,328 @@
+﻿<!DOCTYPE HTML>
+<!--
+	Spectral by HTML5 UP
+	html5up.net | @n33co
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+ <script>
+    
+     function myFunction() {
+         var x = 0;
+         var x1 = 0;
+         var x2 = 0;
+         var x3 = 0;
+         var x4 = 0;
+         var i = 0;
+         var points = [];
+         while (x != 2 || x != 4) {
+
+             var x = Math.floor((Math.random() * 10));
+             if (x == 2) {
+                 var c = document.getElementById("myCanvas1");
+                 var ctx = c.getContext("2d");
+                 // Create gradient
+                 var grd = ctx.createLinearGradient(0, 0, 200, 0);
+                 grd.addColorStop(0, "green");
+                 grd.addColorStop(1, "white");
+                 // Fill with gradient
+                 ctx.fillStyle = grd;
+                 ctx.fillRect(0, 0, 100, 100);
+                 points[i] = x;
+                 break;
+             }
+             else if (x == 4) {
+                 var c = document.getElementById("myCanvas3");
+                 var ctx = c.getContext("2d");
+                 // Create gradient
+                 var grd = ctx.createLinearGradient(0, 0, 200, 0);
+                 grd.addColorStop(0, "green");
+                 grd.addColorStop(1, "white");
+                 // Fill with gradient
+                 ctx.fillStyle = grd;
+                 ctx.fillRect(0, 0, 100, 100);
+                 points[i] = x;
+                 break;
+             }
+         }
+         i++;
+         if (x == 2) {
+             while (x1 != 3 || x1 != 5) {
+
+                 var x1 = Math.floor((Math.random() * 10));
+                 if (x1 == 3) {
+                     var c = document.getElementById("myCanvas2");
+                     var ctx = c.getContext("2d");
+                     // Create gradient
+                     var grd = ctx.createLinearGradient(0, 0, 200, 0);
+                     grd.addColorStop(0, "green");
+                     grd.addColorStop(1, "white");
+                     // Fill with gradient
+                     ctx.fillStyle = grd;
+                     ctx.fillRect(0, 0, 100, 100);
+                     points[i] = x1;
+                     break;
+                 }
+                 else if (x1 == 5) {
+                     var c = document.getElementById("myCanvas4");
+                     var ctx = c.getContext("2d");
+                     // Create gradient
+                     var grd = ctx.createLinearGradient(0, 0, 200, 0);
+                     grd.addColorStop(0, "green");
+                     grd.addColorStop(1, "white");
+                     // Fill with gradient
+                     ctx.fillStyle = grd;
+                     ctx.fillRect(0, 0, 100, 100);
+                     points[i] = x1;
+                     break;
+                 }
+
+             }
+         }
+         else if (x == 4) {
+             while (x1 != 5 || x1 != 7) {
+
+                 var x1 = Math.floor((Math.random() * 10));
+                 if (x1 == 5) {
+                     var c = document.getElementById("myCanvas4");
+                     var ctx = c.getContext("2d");
+                     // Create gradient
+                     var grd = ctx.createLinearGradient(0, 0, 200, 0);
+                     grd.addColorStop(0, "green");
+                     grd.addColorStop(1, "white");
+                     // Fill with gradient
+                     ctx.fillStyle = grd;
+                     ctx.fillRect(0, 0, 100, 100);
+                     break;
+                 }
+                 else if (x1 == 7) {
+                     var c = document.getElementById("myCanvas6");
+                     var ctx = c.getContext("2d");
+                     // Create gradient
+                     var grd = ctx.createLinearGradient(0, 0, 200, 0);
+                     grd.addColorStop(0, "green");
+                     grd.addColorStop(1, "white");
+                     // Fill with gradient
+                     ctx.fillStyle = grd;
+                     ctx.fillRect(0, 0, 100, 100);
+                     break;
+                 }
+
+             }
+         }
+         if (x1 == 5) {
+             while (x2 != 6 || x2 != 8) {
+
+                 var x2 = Math.floor((Math.random() * 10));
+                 if (x2 == 6) {
+                     var c = document.getElementById("myCanvas5");
+                     var ctx = c.getContext("2d");
+                     // Create gradient
+                     var grd = ctx.createLinearGradient(0, 0, 200, 0);
+                     grd.addColorStop(0, "green");
+                     grd.addColorStop(1, "white");
+                     // Fill with gradient
+                     ctx.fillStyle = grd;
+                     ctx.fillRect(0, 0, 100, 100);
+                     points[i] = x2;
+                     break;
+                 }
+                 else if (x2 == 8) {
+                     var c = document.getElementById("myCanvas7");
+                     var ctx = c.getContext("2d");
+                     // Create gradient
+                     var grd = ctx.createLinearGradient(0, 0, 200, 0);
+                     grd.addColorStop(0, "green");
+                     grd.addColorStop(1, "white");
+                     // Fill with gradient
+                     ctx.fillStyle = grd;
+                     ctx.fillRect(0, 0, 100, 100);
+                     points[i] = x2;
+                     break;
+                 }
+             }
+         }
+         if (x1 == 7) {
+             x2 = 8;
+             var c = document.getElementById("myCanvas7");
+             var ctx = c.getContext("2d");
+             // Create gradient
+             var grd = ctx.createLinearGradient(0, 0, 200, 0);
+             grd.addColorStop(0, "green");
+             grd.addColorStop(1, "white");
+             // Fill with gradient
+             ctx.fillStyle = grd;
+             ctx.fillRect(0, 0, 100, 100);
+         }
+         if (x1 == 3) {
+             x2 = 6;
+             var c = document.getElementById("myCanvas5");
+             var ctx = c.getContext("2d");
+             // Create gradient
+             var grd = ctx.createLinearGradient(0, 0, 200, 0);
+             grd.addColorStop(0, "green");
+             grd.addColorStop(1, "white");
+             // Fill with gradient
+             ctx.fillStyle = grd;http://www.search.ask.com/?gct=hp&o=APN10644A&sysid=533&qrsc=2871&l=dis&sver=3&t_type=0&dateOfInstall=2015-08-10&d=533-518-0&v=8.5-860-0&apn_ptnrs=^AG5
+             ctx.fillRect(0, 0, 100, 100);
+         }
+         if (x2 == 6 || x2 == 8) {
+             var c = document.getElementById("myCanvas8");
+             var ctx = c.getContext("2d");
+             // Create gradient
+             var grd = ctx.createLinearGradient(0, 0, 200, 0);
+             grd.addColorStop(0, "green");
+             grd.addColorStop(1, "white");
+             // Fill with gradient
+             ctx.fillStyle = grd;
+             ctx.fillRect(0, 0, 100, 100);
+             points[i] = 9;
+         }
+         setTimeout(function () {
+             window.location.href = "game.html"; //will redirect to your blog page (an ex: blog.html)
+         }, 500); //will call the function after 2 secs.
+         
+    }
+     
+ </script>
+		<title>Generic - Spectral by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+	</head>
+	<body>
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html">Connecting Path</a></h1>
+						<nav id="nav">
+							<ul>
+								<li class="special">
+									<a href="#menu" class="menuToggle"><span>Menu</span></a>
+									<div id="menu">
+										<ul>
+											<li><a href="index.html">Home</a></li>
+											<li><a href="generic.html">Help</a></li>
+											
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Main -->
+					<article id="main">
+						<header>
+							<h2>Connecting Path</h2>
+							<p></p>
+						</header>
+						<section class="wrapper style5">
+							<div class="inner">
+                                <button onclick="myFunction()">Try it</button>
+                                
+                                <table style="width:10%"  align="center" id=" table" >
+                                    <tr >
+                                        <td id=" 1">
+
+                                            <canvas id="myCanvas" width="50" height="30" style="border:1px solid #000000;">
+                                                Your browser does not support the HTML5 canvas tag.
+                                            </canvas>
+                                            <script>
+                                                var c = document.getElementById("myCanvas");
+                                                var ctx = c.getContext("2d");
+                                                // Create gradient
+                                                var grd = ctx.createLinearGradient(0, 0, 200, 0);
+                                                grd.addColorStop(0, "green");
+                                                grd.addColorStop(1, "white");
+                                                // Fill with gradient
+                                                ctx.fillStyle = grd;
+                                                ctx.fillRect(0, 0, 100, 100);
+                                            </script>
+
+                                        </td>
+                                        <td id=" 2">
+                                            <canvas id="myCanvas1" width="50" height="30" style="border: 1px solid #000000;">
+                                                Your browser does not support the HTML5 canvas tag.
+                                            </canvas>
+                                        </td>
+                                        <td id=" 3">
+                                            <canvas id="myCanvas2" width="50" height="30" style="border:1px solid #000000;">
+                                                Your browser does not support the HTML5 canvas tag.
+                                            </canvas>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td id=" 4">
+                                            <canvas id="myCanvas3" width="50" height="30" style="border:1px solid #000000;">
+                                                Your browser does not support the HTML5 canvas tag.
+                                            </canvas>
+                                        </td>
+                                        <td id=" 5">
+                                            <canvas id="myCanvas4" width="50" height="30" style="border: 1px solid #000000;">
+                                                Your browser does not support the HTML5 canvas tag.
+                                            </canvas>
+                                           
+                                        </td>
+                                        <td id=" 6">
+                                            <canvas id="myCanvas5" width="50" height="30" style="border:1px solid #000000;">
+                                                Your browser does not support the HTML5 canvas tag.
+                                            </canvas>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td id=" 7">
+                                            <canvas id="myCanvas6" width="50" height="30" style="border:1px solid #000000;">
+                                                Your browser does not support the HTML5 canvas tag.
+                                            </canvas>
+                                        </td>
+                                        <td id=" 8">
+                                            <canvas id="myCanvas7" width="50" height="30" style="border: 1px solid #000000;">
+                                                Your browser does not support the HTML5 canvas tag.
+                                            </canvas>
+                                           
+                                        </td>
+                                        <td id=" 9">
+                                            <canvas id="myCanvas8" width="50" height="30" style="border: 1px solid #000000;">
+                                                Your browser does not support the HTML5 canvas tag.
+                                            </canvas>
+                                         </td>
+                                    </tr>
+                                </table>
+						
+							</div>
+						</section>
+					</article>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<ul class="icons">
+							<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
+							<li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+						</ul>
+						
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
